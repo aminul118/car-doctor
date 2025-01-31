@@ -23,7 +23,7 @@ export type ChildrenProps = Readonly<{
 
 const RootLayout = ({ children }: ChildrenProps) => {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="light">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
