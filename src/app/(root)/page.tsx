@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
+import Services from "./Home/Services";
 
-const HomePage = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+const HomePage = async () => {
+  return (
+    <div>
+      <Services />
+    </div>
+  );
 };
 
 export default HomePage;

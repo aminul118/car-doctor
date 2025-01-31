@@ -9,12 +9,25 @@ type sectionBannerProps = {
 
 const SectionBanner = ({ image, title, route }: sectionBannerProps) => {
   return (
-    <div>
-      {image && (
-        <Image src={image} alt={title || "Banner"} width={500} height={300} />
-      )}
-      <h3>{title}</h3>
-      <p>{route}</p>
+    <div className="relative w-full ">
+      <figure className="relative">
+        {image && (
+          <Image
+            className="object-cover"
+            src={image}
+            alt="Checkout Image"
+            height={300}
+            width={1900}
+            priority
+          />
+        )}
+        <div className="absolute h-full w-full bg-black/20 top-0 ">
+          <div className="flex flex-col  justify-center h-full">
+            <p className="text-white ml-20 text-3xl">{title}</p>
+            <p>{route}</p>
+          </div>
+        </div>
+      </figure>
     </div>
   );
 };
