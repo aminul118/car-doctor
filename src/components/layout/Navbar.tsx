@@ -40,7 +40,7 @@ const Navbar = () => {
           </div>
           <Link href="/" className="w-20">
             <Image
-              src="/assets/logo.svg"
+              src="/logo.svg"
               width={100}
               height={100}
               alt="Car Doctor Logo"

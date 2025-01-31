@@ -24,6 +24,9 @@ export type ChildrenProps = Readonly<{
 const RootLayout = ({ children }: ChildrenProps) => {
   return (
     <html lang="en" data-theme="light">
+      <head>
+        <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
