@@ -1,5 +1,6 @@
 import React from "react";
-import Services from "./Home/Services";
+import Services from "./components/Services";
+
 
 const HomePage = async () => {
   return (
